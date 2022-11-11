@@ -1,3 +1,7 @@
+*{
+    background-color: #ccd5ae;
+}
+
 body{
     text-align: center;
 }
@@ -17,6 +21,11 @@ footer{
     text-align: center;
     background-color: rgb(101 132 93);
     border-bottom: 5px solid rgb(101 132 93);
+}
+
+header img{
+    height: 400px;
+    width: 2000px;
 }
 
 
@@ -40,7 +49,10 @@ main{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-img{
+
+.section1 img{
+    height: 500px;
+    width: 300px;
     flex: 2 1 100px;
 }
 
