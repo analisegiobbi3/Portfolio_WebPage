@@ -2,48 +2,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/reset.css"/>
+        <link rel="stylesheet" href="./assets/css/style.css"/>
         <title>Mini Project 1</title>
       </head>
 
     <body>
         <header>
-            <nav>
-                <ul>
-                   <li>
-                    <a href="https://github.com/analisegiobbi3">Github</a>
-                   </li>  
-                   <li>
-                    <a href="Portfolio">Portfolio</a>
-                   </li> 
-                   <li>
-                    <a href="Contact">Contact</a>
-                   </li>
-                </ul>
-            </nav>
             <img src="./assets/images/porfolio_body_image.png" alt="Coming soon image">
         </header>
+        <div class="sideNavBar">
+            <a href="https://github.com/analisegiobbi3">Github</a>
+            <a href="#">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </div>
+
+
         <main>
-            <aside>
-                <header>About Me</header>
-            </aside>
-            <section class="section1">
-                <h1>My New Website</h1>
-                <img src="./assets/images/header_image.png" alt="main image">
-                <p>Lorem ipsum dolor, sit amet consectetur adipiscicing elit</p>
-            </section>
+
+            <div class="section1">
+                <aside>
+                    <header>About Me</header>
+                </aside>
+                <section>
+                    <p>Hello! Welcome to my portfolio</p>
+                </section>
+            </div>
+
+
+            <div>
+                <aside>
+                    <header>Portfolio</header>
+                </aside>
+            </div>
+
+            <div>
+
+                <aside>
+                    <header>Contact Me</header>
+                </aside>
+                <a href="#">Phone: (914)-482-8678</a>
+                <a href="#">Email: analise.giobbi@gmail.com</a>
+            </div>
         </main>
-        <section class="section2">
-            <h1>Contact Me</h1>
-            <p>
-                <label for="username">Name:</label>
-                <input id="username" type="text" placeholder="First Last" />
-                <br>
-                <label for="email">Email:</label>
-                <input id="email" type="text" placeholder="Email" />
-            </p>
-            <button>SUBMIT</button>
-        </section>
         <footer>
            © 2022 My New Website Productions
         </footer>

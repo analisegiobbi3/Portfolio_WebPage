@@ -1,3 +1,9 @@
+:root{
+    --nav_bar: rgb(131 179 120);
+    --headerFooter: rgb(101 132 93);
+    --glow: #52796f;
+}
+
 *{
     background-color: #ccd5ae;
 }
@@ -6,21 +12,43 @@ body{
     text-align: center;
 }
 
-nav{
-    /* controls design of the upper nav bar */
-    background-color: rgb(131 179 120);
-    height: 70px;
-    text-align: right;
-    line-height: 60px;
-    /* figure out how to move text to center in a more efficient way than line height */
+
+.sideNavBar{
+    background-color: var(--nav_bar);
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;;
+}
+
+.sideNavBar a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: underline;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #84a98c;
+    display: block;
+    border: 2px dotted #84a98c;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.sideNavBar a:hover{
+    box-shadow: inset 0px 0px 8px var(--glow), 0 0 15px var(--glow);
 }
 
 header,
 footer{
     /* adds color and alignment to board on top and bottom of page */
     text-align: center;
-    background-color: rgb(101 132 93);
-    border-bottom: 5px solid rgb(101 132 93);
+    background-color: var(--headerFooter);
+    border-bottom: 5px solid var(--headerFooter);
 }
 
 header img{
@@ -39,9 +67,13 @@ li{
 }
 
 main{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+}
+
+aside{
+    position: relative;
 }
 
 .section1{
@@ -91,5 +123,10 @@ footer{
     font-size: small;
     line-height: 60px;
 }
+
+@media screen and (max-height: 450px) {
+    .sideNavBar {padding-top: 15px;}
+    .sideNavBar a {font-size: 18px;}
+  }
 
 
