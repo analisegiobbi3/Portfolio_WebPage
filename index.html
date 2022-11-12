@@ -8,42 +8,47 @@
       </head>
 
     <body>
-        <header>
+        <nav>
             <img src="./assets/images/porfolio_body_image.png" alt="Coming soon image">
-        </header>
+        </nav>
         <div class="sideNavBar">
             <a href="https://github.com/analisegiobbi3">Github</a>
-            <a href="#">About Me</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#AboutMe">About Me</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#Contact">Contact</a>
         </div>
 
 
         <main>
-
-            <div class="section1">
-                <aside>
-                    <header>About Me</header>
-                </aside>
-                <section>
-                    <p>Hello! Welcome to my portfolio</p>
+            <div id="AboutMe">
+                <section class="section1">
+                    <header class="sectionHeaders">About Me</header>
+                    <div class="imgposition">
+                        <img src = "./assets/images/header_image.png" alt="Main body image">      
+                    </div>
+                    <div class="textposition">
+                        <p>
+                            Hello! Welcome to my portfolio. I have a degree in mechanical engineering from the University of Connecticut and a background in Quality Assurance. 
+                            Currently, I work for GameChanger by Dick's Sporting Goods as the Software Release Manager. I have experience in UI test automation, CI, and 
+                            quality monitoring. I am hoping to gain experience and refine my skills in web development. 
+                        </p> 
+                    </div>
                 </section>
             </div>
 
-
-            <div>
-                <aside>
-                    <header>Portfolio</header>
-                </aside>
+         <div id="Portfolio">
+                <section class="section2">
+                    <header class="sectionHeaders">Portfolio</header>
+                </section>
             </div>
 
-            <div>
-
-                <aside>
-                    <header>Contact Me</header>
-                </aside>
-                <a href="#">Phone: (914)-482-8678</a>
-                <a href="#">Email: analise.giobbi@gmail.com</a>
+            <div id="Contact">
+                <section class="contact section3">
+                    <header class="sectionHeaders">Contact Me</header>
+                    <br/>
+                    <a href="#">Phone: (914)482-8678</a>
+                    <a href="mailto:analise.giobbi@gmail.com">Email Me!</a>
+                </section>
             </div>
         </main>
         <footer>
