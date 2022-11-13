@@ -70,9 +70,9 @@ section{
     margin-bottom: 70px;
 }
 
-/* section:hover{
-    box-shadow: inset 0px 0px 8px var(--glow2), 0 0 15px var(--glow2);
-} */
+section:hover{
+    box-shadow: 20px 20px 50px var(--glow2);
+}
 
 .section1{
     border: 5px dotted #84a98c;
@@ -82,12 +82,24 @@ section{
     justify-content: center
 }
 
+.section1Header{
+    position: relative;
+    bottom: 61px;
+    left: 0;
+    display: inline;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color:#52796f;
+}
+
 .section1 img{
     max-height: 100%;
     max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
 }
 
 .imgposition{
@@ -142,6 +154,28 @@ footer{
     line-height: 60px;
     text-align: center;
 }
+
+span[data-descr] {
+    position: relative;
+    color: #344e41;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  span[data-descr]:hover::after{
+    content: attr(data-descr);
+    position: relatvie;
+    left: 0;
+    bottom: 5px;
+    min-width: auto;
+    border: 1px #aaaaaa solid;
+    border-radius: 25px;
+    background-color: #344e41;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    z-index: 1;
+  }
 
 @media screen and (max-height: 450px) {
     .sideNavBar {padding-top: 15px;}
