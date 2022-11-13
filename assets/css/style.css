@@ -9,12 +9,14 @@
     background-color: #ccd5ae;
 }
 
+/* Nav bar image */
 nav img{
     height: 400px;
     width: 100%;
     padding-bottom: 20px;
 }
 
+/* Side bar controls */
 .sideNavBar{
     background-color: var(--nav_bar);
     height: 100%;
@@ -41,6 +43,7 @@ nav img{
     margin-top: 20px;
 }
 
+/* Adds shad to side bar when hovered */
 .sideNavBar a:hover{
     box-shadow: inset 0px 0px 8px var(--glow), 0 0 15px var(--glow);
 }
@@ -57,19 +60,20 @@ body{
 
 .sectionHeaders{
     position: relative;
-    bottom: 28px;
     left: 0;
     display: inline;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
     color:#52796f;
+    border: 2px solid #84a98c;
 }
 
 section{
     margin-bottom: 70px;
 }
 
+/* Adds shadow when you hover over different sections*/
 section:hover{
     box-shadow: 20px 20px 50px var(--glow2);
 }
@@ -82,15 +86,13 @@ section:hover{
     justify-content: center
 }
 
-.section1Header{
-    position: relative;
-    bottom: 61px;
-    left: 0;
-    display: inline;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    color:#52796f;
+.section1 p{
+    text-align: center;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #52796f;
 }
 
 .section1 img{
@@ -102,6 +104,7 @@ section:hover{
     margin-top: auto;
 }
 
+/* Postions image and text so that they are side by side */
 .imgposition{
     flex-basis: 40%
 }
@@ -111,19 +114,29 @@ section:hover{
     padding-left: 20px;
 }
 
-.section1 p{
-    text-align: center;
-    margin: 10px 5px;
-    padding: 10px 5px;
-    font-size: large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #52796f;
-}
-
 .section2{
-    border: 5px dotted #84a98c;
     padding-bottom: 10px;
 }
+
+.section2 .img{
+    size: 100%;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.section2 p{
+    padding-top: 10px;
+    color: #84a98c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    border-width: 1px;
+    border: 5px dotted #84a98c;
+  }
 
 .section3{
     border: 5px dotted #84a98c;
@@ -134,18 +147,6 @@ section:hover{
     text-align: center;
 }
 
-#AboutMe{
-    height: auto;
-    width: auto;
-    margin: 10px auto;
-}
-
-#Portfolio{
-    height: auto;
-    width: auto;
-    margin: 10px auto;
-}
-
 footer{
     background-color: #344e41;
     font-family: 'Courier New', Courier, monospace;
@@ -154,6 +155,8 @@ footer{
     line-height: 60px;
     text-align: center;
 }
+
+/* hovering mouse over call me will pull up a pill with the phone number */
 
 span[data-descr] {
     position: relative;
