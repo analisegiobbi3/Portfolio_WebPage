@@ -11,8 +11,8 @@
 
 /* Nav bar image */
 nav img{
-    height: 400px;
-    width: 100%;
+    max-width: 100%;
+    background-size: 100%;
     padding-bottom: 20px;
 }
 
@@ -83,7 +83,7 @@ section:hover{
     padding-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 .section1 p{
@@ -94,6 +94,10 @@ section:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #52796f;
 }
+.section1 span{
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 .section1 img{
     max-height: 100%;
@@ -102,6 +106,7 @@ section:hover{
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
+    border-radius: 75%;
 }
 
 /* Postions image and text so that they are side by side */
