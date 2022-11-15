@@ -4,7 +4,7 @@
 
 Module two's challenge is to create a porfolio to hold and demonstrate the work done during Columbia's Coding Bootcamp. This portfolio is meant to demonstrate skills and understanding in HTML and CSS.
 
-![My Portfolio](./assets/images/Screen%20Shot%202022-11-15%20at%2011.01.23%20AM.png)
+![My Portfolio](./assets/images/Screen%20Shot%202022-11-15%20at%2012.09.07%20PM.png)
 
 ## Objectives
 - GIVEN I need to sample a potential employee's previous work

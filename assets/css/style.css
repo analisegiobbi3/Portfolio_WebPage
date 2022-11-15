@@ -189,7 +189,7 @@ span[data-descr] {
 @media screen and (max-height: 450px) {
     .sideNavBar {padding-top: 15px;}
     .sideNavBar a {font-size: 18px;}
-  }
+}
 
 
 
