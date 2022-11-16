@@ -24,6 +24,7 @@ Module two's challenge is to create a porfolio to hold and demonstrate the work 
 
 
 ## Link to Deploy
+[mod_2_challenge](https://analisegiobbi3.github.io/mod_2_challenge/)
 
 ## Credits
 Page made by Analise Giobbi
