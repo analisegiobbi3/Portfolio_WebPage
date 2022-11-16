@@ -87,10 +87,10 @@ section:hover{
 }
 
 .section1 p{
-    text-align: center;
+    text-align: left;
     margin: 10px 5px;
     padding: 10px 5px;
-    font-size: large;
+    font-size: medium;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #52796f;
 }
@@ -100,18 +100,15 @@ section:hover{
 }
 
 .section1 img{
-    max-height: 100%;
     max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
     border-radius: 75%;
+    float: right;
 }
 
 /* Postions image and text so that they are side by side */
 .imgposition{
-    flex-basis: 40%
+    flex-basis: 50%;
+
 }
 
 .textposition{
