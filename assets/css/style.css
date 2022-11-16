@@ -3,6 +3,7 @@
     --headerFooter: rgb(101 132 93);
     --glow: #52796f;
     --glow2: #4a4e69;
+    --borderColor: #84a98c;
 }
 
 *{
@@ -15,6 +16,7 @@ nav img{
     background-size: 100%;
     padding-bottom: 20px;
 }
+
 
 /* Side bar controls */
 .sideNavBar{
@@ -36,18 +38,19 @@ nav img{
     font-style: italic;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #84a98c;
+    color: var(--borderColor);
     display: block;
-    border: 2px dotted #84a98c;
+    border: 2px dotted var(--borderColor);
     padding: 15px;
     margin-top: 20px;
 }
 
-/* Adds shad to side bar when hovered */
+/* Adds shade to side bar when hovered */
 .sideNavBar a:hover{
     box-shadow: inset 0px 0px 8px var(--glow), 0 0 15px var(--glow);
 }
 
+/* added flex to page */
 body{
     margin-left: 160px;
     display: flex;
@@ -58,6 +61,7 @@ body{
     transition: all 0.5s ease-in-out;
 }
 
+/* positions and controls all section header styles */
 .sectionHeaders{
     position: relative;
     left: 0;
@@ -66,20 +70,23 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
     color:#52796f;
-    border: 2px solid #84a98c;
+    border: 2px solid var(--borderColor);
 }
 
+/* adds space between sections */
 section{
     margin-bottom: 70px;
 }
 
-/* Adds shadow when you hover over different sections*/
+  /* adds shadow under each section so that there is a focus when user has hovered over section */
 section:hover{
     box-shadow: 20px 20px 50px var(--glow2);
 }
 
+
+/* SECTION 1 STYLES: All style for ABOUT ME */
 .section1{
-    border: 5px dotted #84a98c;
+    border: 5px dotted var(--borderColor);
     padding-bottom: 10px;
     display: flex;
     align-items: center;
@@ -116,22 +123,23 @@ section:hover{
     padding-left: 20px;
 }
 
+/* SECTION 2 STYLS: Contains all styling for PORTFOLIO */
 .section2{
     padding-bottom: 10px;
 }
 
 .section2 .img{
     size: 100%;
-    align-items: center;
     padding-top: 10px;
 }
 
 .section2 p{
     padding-top: 10px;
-    color: #84a98c;
+    color: var(--borderColor);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
     margin-top: 5px;
+    text-decoration: underline;
 }
 
 .wrap{
@@ -145,8 +153,9 @@ section:hover{
     max-width: 15%;
   }
 
+/* SECTION 3 STYLES: Contains all styling for CONTACT ME Section */
 .section3{
-    border: 5px dotted #84a98c;
+    border: 5px dotted var(--borderColor);
     padding-bottom: 20px;
 }
 
@@ -187,12 +196,14 @@ span[data-descr] {
     z-index: 1;
   }
 
+/* Ensures that the side bar stays the same size so that the menu options look ok */
 @media screen and (max-height: 450px) {
     .sideNavBar {padding-top: 15px;}
     .sideNavBar a {font-size: 18px;}
 }
 
-
+/* stops profile image from getting too small */
+/* also moves portfolio links to column directions after a certain size */
 @media screen and (max-width: 850px) {
     .section1 {flex-direction: column;}
     .wrap{flex-direction: column;}
